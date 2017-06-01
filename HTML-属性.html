@@ -3,8 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        #w3clink{
+            background: grey;
+            color: white;
+            padding:5px;
+            border: thin solid black;
+        }
+    </style>
 </head>
 <body>
-
+     <p>id属性</p>
+     <a href="http://apress.com">Apress Web Sites</a>
+     <p/>
+     <a href="http://w3c.org"id="w3clink">W3C Web Sites</a>
+     <hr>
+    <p>lang属性</p>
+    <p lang="en">Hello-how are you?</p>
+    <p lang="fr">Bonjour-Comment êtes-vous? </p>
+    <p lang="es">Hola -¿Cómo está usted?</p>
+     <hr>
+    <p>spellcheck属性</p>
+     <textarea spellcheck="true">This is some mispelled text</textarea>
+     <hr>
+    <p>style属性</p>
+     <a href="http://apress.com"style="background: grey;color:white;padding: 10px;"target="_blank">Visit the Apress site</a>
+     <hr>
+    <p>tabindex属性</p>
+     <form >
+         <label >Name:  <input type="text" name="name" tabindex="1"></label>
+         <p/>
+         <label >City: <input type="text" name="city" tabindex="-1"> </label>
+         </p>
+         <label >Country: <input type="text"name="country" tabindex="2"></label>
+         </p>
+         <input type="submit" tabindex="3">
+     </form>
+     <hr>
+    <p>titl属性</p>
+     <a href="http://apress.com"title="Apress Publishing">Visit the Apress site</a>
 </body>
 </html>
