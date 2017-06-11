@@ -1,8 +1,22 @@
-#one{
+a{
     background: grey;
     color:white;
+}
+p.title{
+    background: purple;
+    color:white;
+}
+a.user{
+    color: white;
+    background: green;
+    text-decoration: none;
+    padding: 2px;
 }
 span{
     border: thin  black solid;
     padding: 3px;
+}
+span1{
+    border: medium black dashed;
+    padding:10px;
 }
