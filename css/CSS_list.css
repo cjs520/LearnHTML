@@ -5,6 +5,8 @@ a{
 p.title{
     background: purple;
     color:white;
+    width: 8cm;
+    font-size: 20pt;
 }
 a.user{
     color: white;
@@ -12,11 +14,56 @@ a.user{
     text-decoration: none;
     padding: 2px;
 }
+a.myclass{
+    color: white;
+    background: grey;
+}
+p.fifth{
+    color: white;
+    background: grey;
+    border: medium solid black;
+}
 span{
     border: thin  black solid;
     padding: 3px;
 }
-span1{
+span.second{
     border: medium black dashed;
     padding:10px;
+}
+span.sixth{
+    border: inherit;
+}
+p.seventh{
+    background: grey;
+    color: white;
+    font-size: 15pt;
+    height: 2em;
+}
+html{
+    font-size: 0.2in;
+}
+p.eighth{
+    color: white;
+    background: grey;
+    font-size: 2rem;
+    height: 2em;
+}
+p.nineth{
+    background: grey;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+}
+p.tenth{
+    background: grey;
+    color:white;
+    font-size: 200%;
+    width: 50%;
+}
+p.eleventh{
+    background: grey;
+    color:white;
+    font-size: 20pt;
+    width: calc(80%-20px);
 }
