@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script type="text/javascript">
+    document.writeln("Hello");
+    document.writeln("This is a statement");
+    document.writeln("This is also a statement");
+</script>
+<script type="text/javascript">
+    function myFun() {
+        document.writeln("This a statement");
+    };
+    myFun();
+    function myFun1(name,weather) {/*带参函数*/
+        document.writeln("Hello "+ name +".");
+        document.writeln("It is "+ weather +" today");
+    };
+    myFun1("Adam","sunny");
+    function myFunc(name) {/*定义会返回结果的函数*/
+        return("Hello "+name+".");
+    };
+    document.writeln(myFunc("Tom"));
+</script>
+<script type="text/javascript">
+    var  myGlobalVar="apples";
+
+    function myFun2(name) {
+        var  myLocalVar="sunny";
+        return ("Hello "+name+". Today is "+myLocalVar+".");
+    };
+    document.writeln(myFun2("John"));
+</script>
+<script type="text/javascript">
+    document.writeln("I like "+myGlobalVar);
+</script>
+<script type="text/javascript">
+    var firstString="This is a string";
+    var secondString='And so is this';/*字符串类型*/
+    var firstBool=true;
+    var secondBool=false;/*布尔变量*/
+    var daysInWeek=7;
+    var pi=3.141592653579286;
+    var hexValue=0xFFFF;/*数值变量*/
+</script>
+<script type="text/javascript">
+    var myData=new Object();
+    myData.name="Tank";
+    myData.weather="cloudy";
+    document.writeln("Hello "+myData.name+".");
+    document.writeln("Today is "+myData.weather+".");/*创建对象*/
+    var myData1={
+        name:"Jack",
+        weather:"sunny"
+    };
+    document.writeln("Hello "+myData1.name+".");
+    document.writeln("Today is "+myData1.weather+".");/*使用对象字面量*/
+    var myData2={
+        name:"Jack",
+        weather:"sunny",
+        printMessage:function () {
+            document.writeln("Hello "+this.name+".");
+            document.writeln("Today is "+this.weather+".");
+
+        }
+
+    };
+    myData2.printMessage();/*为对象添加方法*/
+</script>
+
+</body>
+</html>
